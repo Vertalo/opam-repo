@@ -36,7 +36,7 @@ url {
   src:
     "https://github.com/ELLIOTTCABLE/ocaml-ambient-context/archive/refs/tags/v0.1.0.tar.gz"
   checksum: [
-    "md5=0171c39c3b15aa567df33792d177314a"
-    "sha512=0ef177d42e120fb174350ebc9db7d87106d9509d0c9f7f49dfce3bbf424259a1ec8f9bbf1b6a8faecff10544a7530a5d1d4d2fffdfc3f4a39c34c119540a28b2"
+    "md5=cf4936e766aa41bab02e549a7d97b92c"
+    "sha512=60a1aa5abe0bf07dc617caf8153e43a5fc963c9b39d9cd86596f8c968d32681ffc21c77c20778b4732a1d9885257574519f497d7c8052d38c4a82d34d20c35ef"
   ]
 }
