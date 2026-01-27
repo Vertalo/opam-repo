@@ -33,7 +33,7 @@ url {
   src:
     "https://github.com/Vertalo/hacl-packages/releases/download/ocaml-v0.7.2/hacl-star.0.7.2.tar.gz"
   checksum: [
-    "md5=d1ad5cf3313c0f7e474e341d05cbbb9c"
-    "sha512=f891b64eb18fed7d120e956e71942999b1d7c85bb9e17a1218461a6a16ec0b1a4b44813aadda20928ba136b5123b73d01a4789ff1ef9156cfffd48c7f5f35f3c"
+    "md5=8ef94c4b8af0a479f7834e7b59a5166b"
+    "sha512=0590715d8963f46725dc338133b5620444e68cbb04cfed0c959344c04b931aebb504b5c826107032213edbc10b58f5e866bc1c77a9f08c2a7656dbe94ad83dbc"
   ]
 }
