@@ -22,18 +22,18 @@ conflicts: ["ocaml-option-bytecode-only"]
 available:
   arch != "ppc64" & arch != "ppc32" & arch != "arm32" & arch != "riscv64" &
   os-family != "windows" &
-  os-family != "bsd"
+  (os = "freebsd" | os-family != "bsd")
 build: [
   [make "-C" "hacl-star-raw" "build-c"]
   [make "-C" "hacl-star-raw" "build-bindings"]
 ]
 install: [make "-C" "hacl-star-raw" "install"]
-dev-repo: "git+https://github.com/cryspen/hacl-packages.git"
+dev-repo: "git+https://github.com/Vertalo/hacl-packages.git"
 url {
   src:
-    "https://github.com/cryspen/hacl-packages/releases/download/ocaml-v0.7.2/hacl-star.0.7.2.tar.gz"
+    "https://github.com/Vertalo/hacl-packages/releases/download/ocaml-v0.7.2/hacl-star.0.7.2.tar.gz"
   checksum: [
-    "md5=8c2afd2d2fb163ec6c885243f757c70c"
-    "sha512=3195917cbafe1849281b776c1f9e52c229d9041922ac3dbcc6557241b9c9156bb405dcd9fbe41edbfe224bc7e5dd269f3fe2a7bef6d566daa5fd2662963296c0"
+    "md5=d1ad5cf3313c0f7e474e341d05cbbb9c"
+    "sha512=f891b64eb18fed7d120e956e71942999b1d7c85bb9e17a1218461a6a16ec0b1a4b44813aadda20928ba136b5123b73d01a4789ff1ef9156cfffd48c7f5f35f3c"
   ]
 }
