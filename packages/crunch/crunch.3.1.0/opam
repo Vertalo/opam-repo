@@ -34,9 +34,9 @@ and do not want to deal with all the trouble of file configuration.
 """
 url {
   src:
-    "https://github.com/mirage/ocaml-crunch/releases/download/v3.2.0/crunch-v3.2.0.tbz"
+    "https://github.com/mirage/ocaml-crunch/releases/download/v3.1.0/crunch-v3.1.0.tbz"
   checksum: [
-    "sha256=0a1a4ebb86ab643dd193b5c0046e4d168c6e1cb41e6e5e5b6fbd3b7492e8c6de"
-    "sha512=8666e4081c96b7e0820c621197cb02de2238ddc911e4e95f439c69a685a5791dd4f874ba1084f56c9b44d3d579b877b1ed1f7b0421cd56d3f36ad39c669ee4eb"
+    "sha256=ced263b2fee874347159ebb10c8f553354908cef2230bb220f3941a24a384634"
+    "sha512=30267de603537e8dc5528d9a43e4d5c0baaf3bf9a9332ce8ac897ca14cff0dd543f8b0d508d720f45f3b0e8c8bc757684d2b53196e3dd009743a2779d72fcb1d"
   ]
 }
