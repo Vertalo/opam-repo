@@ -2,19 +2,19 @@ opam-version: "2.0"
 synopsis: "Fast, portable, and opinionated build system"
 description: """
 
-dune is a build system that was designed to simplify the release of
+Dune is a build system that was designed to simplify the release of
 Jane Street packages. It reads metadata from "dune" files following a
 very simple s-expression syntax.
 
-dune is fast, has very low-overhead, and supports parallel builds on
+Dune is fast, has very low-overhead, and supports parallel builds on
 all platforms. It has no system dependencies; all you need to build
 dune or packages using dune is OCaml. You don't need make or bash
 as long as the packages themselves don't use bash explicitly.
 
-dune supports multi-package development by simply dropping multiple
-repositories into the same directory.
+Dune is composable; supporting multi-package development by simply
+dropping multiple repositories into the same directory.
 
-It also supports multi-context builds, such as building against
+Dune also supports multi-context builds, such as building against
 several opam roots/switches simultaneously. This helps maintaining
 packages across several versions of OCaml and gives cross-compilation
 for free.
@@ -36,8 +36,8 @@ conflicts: [
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
 build: [
-  ["ocaml" "bootstrap.ml" "-j" jobs]
-  ["./dune.exe" "build" "dune.install" "--release" "--profile" "dune-bootstrap" "-j" jobs]
+  ["ocaml" "boot/bootstrap.ml" "-j" jobs]
+  ["./_boot/dune.exe" "build" "dune.install" "--release" "--profile" "dune-bootstrap" "-j" jobs]
 ]
 depends: [
   # Please keep the lower bound in sync with .github/workflows/workflow.yml,
@@ -47,10 +47,11 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/ocaml/dune/releases/download/3.5.0/dune-3.5.0.tbz"
+  src:
+    "https://github.com/ocaml/dune/releases/download/3.14.2/dune-3.14.2.tbz"
   checksum: [
-    "sha256=77bd4c6704359fae1969636cfc3cd7a517ba3604819ef89c919c0762b5093610"
-    "sha512=acaed76ab8618977118579641a1f6734ed4a225ab46494c6c5fd8e1bf9a0889e62db9adc7bd11770da602f4dd4785cef5ece4ad26512d08b64b8f3bd8954c80d"
+    "sha256=e80867cb362b2749d9d9e0cbab2982f98af1daf4459b81164ca0aac6b4e6ace1"
+    "sha512=c60b35de3fe000650eb8d49a44fd9aeb25c6006be15e2c88407882e0f272747abdffc6449f6cfd68b86e233dcbb7ff685fd198635947a991cf0197dd69f489be"
   ]
 }
-x-commit-hash: "77c1e6f8f27f57fe0c04ec1624a85069b02437cf"
+x-commit-hash: "b19f6df8954995899e30275055d9582b6c83687c"

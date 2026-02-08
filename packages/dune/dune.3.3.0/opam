@@ -47,10 +47,10 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/ocaml/dune/releases/download/3.5.0/dune-3.5.0.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/3.3.0/dune-3.3.0.tbz"
   checksum: [
-    "sha256=77bd4c6704359fae1969636cfc3cd7a517ba3604819ef89c919c0762b5093610"
-    "sha512=acaed76ab8618977118579641a1f6734ed4a225ab46494c6c5fd8e1bf9a0889e62db9adc7bd11770da602f4dd4785cef5ece4ad26512d08b64b8f3bd8954c80d"
+    "sha256=1a08c708eb3f4346caa1ee814027484900d0e1518582f5c4d53fff6190d5504f"
+    "sha512=15cddad51ad6e9d1b71756da9e898a42846c2f320268342a18b8df79fc33383ffdc775c199fbe2a114affb480e0558a8f27492c9c274e6bc6cc86084ecdd543e"
   ]
 }
-x-commit-hash: "77c1e6f8f27f57fe0c04ec1624a85069b02437cf"
+x-commit-hash: "f5ed6a495947c0e0cc8fa4fc0eac9ffcccdbdbd9"

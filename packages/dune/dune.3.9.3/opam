@@ -36,8 +36,8 @@ conflicts: [
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
 build: [
-  ["ocaml" "bootstrap.ml" "-j" jobs]
-  ["./dune.exe" "build" "dune.install" "--release" "--profile" "dune-bootstrap" "-j" jobs]
+  ["ocaml" "boot/bootstrap.ml" "-j" jobs]
+  ["./_boot/dune.exe" "build" "dune.install" "--release" "--profile" "dune-bootstrap" "-j" jobs]
 ]
 depends: [
   # Please keep the lower bound in sync with .github/workflows/workflow.yml,
@@ -47,10 +47,10 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/ocaml/dune/releases/download/3.5.0/dune-3.5.0.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/3.9.3/dune-3.9.3.tbz"
   checksum: [
-    "sha256=77bd4c6704359fae1969636cfc3cd7a517ba3604819ef89c919c0762b5093610"
-    "sha512=acaed76ab8618977118579641a1f6734ed4a225ab46494c6c5fd8e1bf9a0889e62db9adc7bd11770da602f4dd4785cef5ece4ad26512d08b64b8f3bd8954c80d"
+    "sha256=96bf755da267fb46e4af2dda0db56d5863761589618089c429ff85e0f7f65783"
+    "sha512=ce05560a2cff0beb805a259df449b5dbd15420e353cc686a482904b837969bce6f91eedec608ecef4be0ebc232fa013652745a7cc831af1a7f8fe06a391e5488"
   ]
 }
-x-commit-hash: "77c1e6f8f27f57fe0c04ec1624a85069b02437cf"
+x-commit-hash: "842d104126175999e25f5cd63e2a384f9c6ef797"

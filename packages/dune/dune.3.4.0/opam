@@ -33,6 +33,8 @@ conflicts: [
   "dune-release" {< "1.3.0"}
   "js_of_ocaml-compiler" {< "3.6.0"}
   "jbuilder" {= "transition"}
+  "ocaml-base-compiler" {= "5.0.0~alpha0"}
+  "ocaml-variants" {= "5.0.0~alpha0+options"}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
 build: [
@@ -47,10 +49,11 @@ depends: [
   "base-threads"
 ]
 url {
-  src: "https://github.com/ocaml/dune/releases/download/3.5.0/dune-3.5.0.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/3.4.0/dune-3.4.0.tbz"
   checksum: [
-    "sha256=77bd4c6704359fae1969636cfc3cd7a517ba3604819ef89c919c0762b5093610"
-    "sha512=acaed76ab8618977118579641a1f6734ed4a225ab46494c6c5fd8e1bf9a0889e62db9adc7bd11770da602f4dd4785cef5ece4ad26512d08b64b8f3bd8954c80d"
+    "sha256=0a5566c4910f193d609965a034b482085dc04e0bcdfec9756ff9957df2b67a3c"
+    "sha512=74cd3aa75fb0fcc098b6dcf69d6d904221b69b52430e910e0839e1706c453647a4d107471b55363e16ba8094e62461736a1e52eca08dd288cbb15d3d6ce0df10"
   ]
 }
-x-commit-hash: "77c1e6f8f27f57fe0c04ec1624a85069b02437cf"
+x-commit-hash: "261966294b37f7c88973207944338b79b2ad27f8"
+available: !(os = "cygwin" & arch = "x86_32")
