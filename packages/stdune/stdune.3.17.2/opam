@@ -10,7 +10,7 @@ doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
   "dune" {>= "3.12"}
-  "ocaml" {>= "4.08.0" & < "5.4"}
+  "ocaml" {>= "4.08.0"}
   "base-unix"
   "dyn" {= version}
   "ordering" {= version}
@@ -19,6 +19,7 @@ depends: [
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
+x-maintenance-intent: ["none"]
 build: [
   ["dune" "subst"] {dev}
   ["rm" "-rf" "vendor/csexp"]
@@ -43,4 +44,3 @@ url {
   ]
 }
 x-commit-hash: "fedec664a6ba500f94ba4558112f52d5719bed4d"
-x-maintained: true # used by https://github.com/rocq-community/docker-base/blob/master/images.yml
