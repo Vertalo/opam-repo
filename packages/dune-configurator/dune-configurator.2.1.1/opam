@@ -10,24 +10,19 @@ Among other things, dune-configurator allows one to:
 - import #define from OCaml header files
 - generate config.h file
 """
-maintainer: ["Jane Street Group, LLC <opensource@janestreet.com>"]
-authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
+maintainer: ["Jane Street Group, LLC"]
+authors: ["Jane Street Group, LLC"]
 license: "MIT"
 homepage: "https://github.com/ocaml/dune"
 doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
-  "dune" {>= "3.12"}
-  "ocaml" {>= "4.04.0"}
-  "base-unix"
-  "csexp" {>= "1.5.0"}
-  "odoc" {with-doc}
+  "dune" {>= "2.0"}
+  "dune-private-libs" {= version}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
 build: [
   ["dune" "subst"] {dev}
-  ["rm" "-rf" "vendor/csexp"]
-  ["rm" "-rf" "vendor/pp"]
   [
     "dune"
     "build"
@@ -40,11 +35,9 @@ build: [
   ]
 ]
 url {
-  src:
-    "https://github.com/ocaml/dune/releases/download/3.15.3/dune-3.15.3.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/2.1.1/dune-2.1.1.tbz"
   checksum: [
-    "sha256=3c27c7676414056f0368a71fdc670d2b0a59898090c78a1b68230984e5beb713"
-    "sha512=c88ac7a6ed9334a4bc6231ecfb0efaa961dda99bc386fd5b92505151ff833dfaf058d75305fbb64c496e570058ec9000ac6add06dda7a395e757e924af1d1a7f"
+    "sha256=b14417016fa0901c0b04b8474aa9e5eafaadb298c4dc422899b7f9e8bcb7aa7c"
+    "sha512=605019ed9555ae669fd3e27518637a7e31e5935d4b0db54d6b066e0e1d11ef163b57eacec50f1f061baa808548c2b9017b8b1c44e3e78e50bbf27a572408e18f"
   ]
 }
-x-commit-hash: "55da8f9248e3f5a06d6234ae35b140d1b37c6f0b"
