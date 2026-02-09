@@ -20,7 +20,6 @@ depends: [
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
-x-maintenance-intent: ["(latest)"]
 build: [
   ["dune" "subst"] {dev}
   ["rm" "-rf" "vendor/csexp"]
@@ -38,10 +37,10 @@ build: [
 ]
 url {
   src:
-    "https://github.com/ocaml/dune/releases/download/3.17.2/dune-3.17.2.tbz"
+    "https://github.com/ocaml/dune/releases/download/3.14.0/dune-3.14.0.tbz"
   checksum: [
-    "sha256=9deafeed0ecfe9e65e642cd8e6197f0864f73fcd7b94b5b199ae4d2e07a2ea64"
-    "sha512=1e85bb297a12c9571b8645541d85a719deffb619d5e4f48dbf4566ac14e9f385d8a05342698a6f9c81ba17325b1da4ad004a5772d66cd88ed135c43d43e88f9e"
+    "sha256=f4d09d89162621fdff424c253fa50c4920d2179fb5b3d1debab7bbe97c68b2fc"
+    "sha512=f5ead1a9a0cc26e00a762e83e107b47c3c3fe9b44d9e505547c385c7938208d4fdcc91a8099512e76ea4a426f3543445b4d75ef0b621dc7dbfdcbb615bc0b999"
   ]
 }
-x-commit-hash: "fedec664a6ba500f94ba4558112f52d5719bed4d"
+x-commit-hash: "73250f00372d3f28a25963ded6138728f4202663"
