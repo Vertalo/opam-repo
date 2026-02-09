@@ -9,26 +9,20 @@ This package contains code that is shared between various dune-xxx
 packages. However, it is not meant for public consumption and provides
 no stability guarantee.
 """
-maintainer: ["Jane Street Group, LLC <opensource@janestreet.com>"]
-authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
+maintainer: ["Jane Street Group, LLC"]
+authors: ["Jane Street Group, LLC"]
 license: "MIT"
 homepage: "https://github.com/ocaml/dune"
 doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
-  "dune" {>= "3.12"}
-  "csexp" {>= "1.5.0"}
-  "pp" {>= "1.1.0" & < "2.0.0"}
-  "dyn" {= version}
-  "stdune" {= version}
-  "ocaml" {>= "4.08"}
+  "dune" {>= "2.7"}
+  "ocaml" {>= "4.10" & < "5.0"}
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
 build: [
   ["dune" "subst"] {dev}
-  ["rm" "-rf" "vendor/csexp"]
-  ["rm" "-rf" "vendor/pp"]
   [
     "dune"
     "build"
@@ -41,11 +35,9 @@ build: [
   ]
 ]
 url {
-  src:
-    "https://github.com/ocaml/dune/releases/download/3.15.3/dune-3.15.3.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/2.7.0/dune-2.7.0.tbz"
   checksum: [
-    "sha256=3c27c7676414056f0368a71fdc670d2b0a59898090c78a1b68230984e5beb713"
-    "sha512=c88ac7a6ed9334a4bc6231ecfb0efaa961dda99bc386fd5b92505151ff833dfaf058d75305fbb64c496e570058ec9000ac6add06dda7a395e757e924af1d1a7f"
+    "sha256=b417ca85bdce4171e71255be4a9c5a7572646cb1dcb221bba3757dc6ac8f1c15"
+    "sha512=5e5b649b1a16747bf2a0bf093ecf2dc701b2713c166e3d25731422bba2b94e807ded2242ee0e750e2264d21a03c966c24f4812c6d5ed690bba60543db7303f89"
   ]
 }
-x-commit-hash: "55da8f9248e3f5a06d6234ae35b140d1b37c6f0b"
