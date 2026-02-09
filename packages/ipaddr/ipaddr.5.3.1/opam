@@ -42,10 +42,10 @@ build: [
 dev-repo: "git+https://github.com/mirage/ocaml-ipaddr.git"
 url {
   src:
-    "https://github.com/mirage/ocaml-ipaddr/releases/download/v5.6.0/ipaddr-5.6.0.tbz"
+    "https://github.com/mirage/ocaml-ipaddr/releases/download/v5.3.1/ipaddr-5.3.1.tbz"
   checksum: [
-    "sha256=9e30433fdb4ca437a6aa8ffb447baca5eba7615fb88e7b0cd8a4b416c3208133"
-    "sha512=66a3bedfd91dacd6c1de9ba35abac3ef2ad3c2c8543f7b4e2a0cc6283a8d42138b48d02e904df0232ee9f320920e889bddbbda9a5148c5c6b72fd0164e0c6a34"
+    "sha256=9820bcbccadb6e6d9e22fe26b2f9a044897c8f47c29d157f464b41a2f191e7d4"
+    "sha512=1d400f8344d1a8c2ac1c55e4a7167484034094e2227ce7c8f2f45843b0875a83030851400ceb96b5cdb756fa8798d83c77d839705fcb9e3f2bd5e46d337d63d0"
   ]
 }
-x-commit-hash: "a3852099627a9f9c56d75efe1c1adf4941c6c3d4"
+x-commit-hash: "4fe91c7a7774d829a65e711be5d7df1501bc2e75"
