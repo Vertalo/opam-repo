@@ -1,6 +1,5 @@
 opam-version: "2.0"
-synopsis: "Dynamic type"
-description: "Dynamic type"
+synopsis: "Embed locations informations inside executable and libraries"
 maintainer: ["Jane Street Group, LLC <opensource@janestreet.com>"]
 authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
 license: "MIT"
@@ -8,10 +7,8 @@ homepage: "https://github.com/ocaml/dune"
 doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
-  "dune" {>= "3.12"}
-  "ocaml" {>= "4.08.0"}
-  "ordering" {= version}
-  "pp" {>= "1.1.0" & < "2.0.0"}
+  "dune" {>= "3.0"}
+  "dune-private-libs" {= version}
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
@@ -32,10 +29,10 @@ build: [
 ]
 url {
   src:
-    "https://github.com/ocaml/dune/releases/download/3.15.3/dune-3.15.3.tbz"
+    "https://github.com/ocaml/dune/releases/download/3.1.0/fiber-3.1.0.tbz"
   checksum: [
-    "sha256=3c27c7676414056f0368a71fdc670d2b0a59898090c78a1b68230984e5beb713"
-    "sha512=c88ac7a6ed9334a4bc6231ecfb0efaa961dda99bc386fd5b92505151ff833dfaf058d75305fbb64c496e570058ec9000ac6add06dda7a395e757e924af1d1a7f"
+    "sha256=077d520b0845c56e10ec5856d7c66ebe7a1f1bea4a3027d182f44b2529519d81"
+    "sha512=644fbf11e53ac88307b44c98f380e2c9db222b94e0e38263525c59d3504f185d79d916a506af45e84d16fd66889e1745305a7385d911e7b11c290549efdb444c"
   ]
 }
-x-commit-hash: "55da8f9248e3f5a06d6234ae35b140d1b37c6f0b"
+x-commit-hash: "9bf3da86f1de33a9884eb91610a6dd9c875ebcbe"

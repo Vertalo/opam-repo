@@ -1,6 +1,5 @@
 opam-version: "2.0"
-synopsis: "Dynamic type"
-description: "Dynamic type"
+synopsis: "Embed locations information inside executable and libraries"
 maintainer: ["Jane Street Group, LLC <opensource@janestreet.com>"]
 authors: ["Jane Street Group, LLC <opensource@janestreet.com>"]
 license: "MIT"
@@ -9,9 +8,7 @@ doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
   "dune" {>= "3.12"}
-  "ocaml" {>= "4.08.0"}
-  "ordering" {= version}
-  "pp" {>= "1.1.0" & < "2.0.0"}
+  "dune-private-libs" {= version}
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
@@ -32,10 +29,10 @@ build: [
 ]
 url {
   src:
-    "https://github.com/ocaml/dune/releases/download/3.15.3/dune-3.15.3.tbz"
+    "https://github.com/ocaml/dune/releases/download/3.17.1/dune-3.17.1.tbz"
   checksum: [
-    "sha256=3c27c7676414056f0368a71fdc670d2b0a59898090c78a1b68230984e5beb713"
-    "sha512=c88ac7a6ed9334a4bc6231ecfb0efaa961dda99bc386fd5b92505151ff833dfaf058d75305fbb64c496e570058ec9000ac6add06dda7a395e757e924af1d1a7f"
+    "sha256=6b9ee5ed051379a69ca45173ac6c5deb56b44a1c16e30b7c371343303d835ac6"
+    "sha512=fed5b091c307a2817e415456bd66a6bc98d7daaedd08a388b8544a6371346f9227765bcceb6b480a2192e0ec198cd6a818ba50af56819fd70992b14a4d0baccf"
   ]
 }
-x-commit-hash: "55da8f9248e3f5a06d6234ae35b140d1b37c6f0b"
+x-commit-hash: "12010a06d8ec7cdcf8a1f63b242e9626e1bd620f"

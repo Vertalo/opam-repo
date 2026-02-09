@@ -12,6 +12,7 @@ depends: [
   "odoc" {with-doc}
 ]
 dev-repo: "git+https://github.com/ocaml/dune.git"
+x-maintenance-intent: ["(latest)"]
 build: [
   ["dune" "subst"] {dev}
   ["rm" "-rf" "vendor/csexp"]
@@ -36,4 +37,3 @@ url {
   ]
 }
 x-commit-hash: "fedec664a6ba500f94ba4558112f52d5719bed4d"
-x-maintained: true # used by https://github.com/rocq-community/docker-base/blob/master/images.yml

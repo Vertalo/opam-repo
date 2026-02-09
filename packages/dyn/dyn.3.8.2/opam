@@ -8,7 +8,7 @@ homepage: "https://github.com/ocaml/dune"
 doc: "https://dune.readthedocs.io/"
 bug-reports: "https://github.com/ocaml/dune/issues"
 depends: [
-  "dune" {>= "3.12"}
+  "dune" {>= "3.5"}
   "ocaml" {>= "4.08.0"}
   "ordering" {= version}
   "pp" {>= "1.1.0" & < "2.0.0"}
@@ -31,11 +31,10 @@ build: [
   ]
 ]
 url {
-  src:
-    "https://github.com/ocaml/dune/releases/download/3.15.3/dune-3.15.3.tbz"
+  src: "https://github.com/ocaml/dune/releases/download/3.8.2/dune-3.8.2.tbz"
   checksum: [
-    "sha256=3c27c7676414056f0368a71fdc670d2b0a59898090c78a1b68230984e5beb713"
-    "sha512=c88ac7a6ed9334a4bc6231ecfb0efaa961dda99bc386fd5b92505151ff833dfaf058d75305fbb64c496e570058ec9000ac6add06dda7a395e757e924af1d1a7f"
+    "sha256=5a6ec790128616b6b46616427fa9c8f2ba0d6ef5a405bf8fdbc6f82dc0d935fd"
+    "sha512=d0298138e46d1a3eb9b46ed369314259e1b3611f377b7562ac50353cdb9d480c2487810ade65e1f3ccc6df00bd8e43bfd3c2664d0c3c59cb13abd091be87324d"
   ]
 }
-x-commit-hash: "55da8f9248e3f5a06d6234ae35b140d1b37c6f0b"
+x-commit-hash: "e6a7ca69d3b27aa21b59887b5549daafdc931899"
