@@ -45,8 +45,8 @@ url {
   src:
     "https://gitlab.com/tezos/tezos-rust-libs/-/archive/v1.6/tezos-rust-libs-v1.6.zip"
   checksum: [
-    "sha512=ac4df82e4ff65e1f65a808fbe1494519e175c7b2ed22dc8336c4458996075088d5d41d223ade9c48e285f41929d5048c0af2a484e0c543e75d8ee133829564b5"
-    "sha256=7ca33dc3bf873fc5768ca5670f6abe43b8f9badde43a956c3f61f3dd979bec34"
+    "sha512=936af36785e69c40bc1e3e306865a9c6ca2936bc8e974c0a47f142f5617529586df4f9048efe1c99f1ef8edfe0bbe7592049b289a3925c414154f63dd4eaafb2"
+    "sha256=6c8c16816a95c9961fcc459d49b70e9af2915fb7e43f34a30680d5d8103bacb9"
   ]
 }
 x-ci-accept-failures: [

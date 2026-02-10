@@ -55,7 +55,7 @@ patches: [ "disable_warn_70.patch" ]
 
 url {
   src: "https://github.com/coq/coq/archive/V8.13.2.tar.gz"
-  checksum: "sha256=1e7793d8483f1e939f62df6749f843df967a15d843a4a5acb024904b76e25a14"
+  checksum: "sha256=e6e731de03c3b9d5a7252d0325b82fe801a6af7f51fa5a1231a7bc6aae3f6d99"
 }
 extra-source "disable_warn_70.patch" {
   src:
